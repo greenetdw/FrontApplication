@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS $http</title>
+
+    <link rel="stylesheet" href="css/foundation.min.css">
+</head>
+<body>
+    <div ng-app="app">
+        <!--<hello></hello>-->
+        <!--<div hello></div>-->
+        <div class="hello"></div>
+        <div class="geek"></div>
+    </div>
+</body>
+<script src="../common/js/angular.min.js"></script>
+<script>
+var app = angular.module('app',[]);
+
+app.directive('hello',function () {
+    return {
+        /*restrict:'E',
+        replace:true,//替换掉directive自定义的名称
+        template:'<div>Hello World</div>'*/
+
+        /*restrict:'A',
+        link:function () {
+            alert("我在这里");
+        }*/
+
+        restrict:'C',
+        link:function () {
+            alert("我在这里");
+        }
+    }
+})
+
+app.directive('geek',function () {
+    return {
+        restrict:'C',
+        link:function () {
+            alert("我在这里geek");
+        }
+    }
+})
+</script>
+</html>

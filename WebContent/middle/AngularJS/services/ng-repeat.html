@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngualrJS</title>
+    <link rel = "stylesheet" type="text/css" href="css/foundation.min.css">
+</head>
+<body ng-app="app" ng-controller="AddressCtrl">
+    <div style="padding:10px;font-weight:bold">地址管理</div>
+    <ul class="ui-list ui-list-link ui-list-text ul-list-active ui-border-tb">
+        <li ng-repeat="a in list" class="ui-border-t">
+            <h4>{{$index + 1 + '.' + a.address + $first + ' ' + $last}}</h4>
+
+        </li>
+    </ul>
+    <br>
+    <ul>
+        <li ng-repeat="a in list" class="ui-border-t">
+        <h4 ng-if="!$last">{{$index+1+'.'+a.address}}</h4>
+        </li>
+    </ul>
+    <br>
+    <ul>
+        <li ng-repeat="a in list" class="ui-border-t" ng-if="!$last">
+            <h4>{{$index + 1 + '.' + a.address}}</h4>
+        </li>
+    </ul>
+    <br>
+    <ul class="ui-list ui-list-link ui-list-text ul-list-active ui-border-tb">
+        <li ng-repeat="a in list" ng-class="{'selected':$first}">
+            <h4>{{$index + 1 + '.' + a.address}}</h4>
+
+        </li>
+    </ul>
+</body>
+<script src="../common/js/angular.min.js"></script>
+<script src="js/ng-repeat.js"></script>
+</html>

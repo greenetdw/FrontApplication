@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../common/css/bootstrap.min.css"/>
+    <title></title>
+</head>
+<body style="padding:10px;" ng-app="app">
+	<div ng-controller='MyCtrl'>
+		<input type="text" ng-model='msg'>
+		<h1>{{msg}}</h1>
+		
+		<h1 ng-clock class="ng-clock">{{msg}}</h1>
+		<h1 ng-bind="'信息' + msg"></h1>
+	</div>
+	<div ng-controller='SecondCtrl'>
+		<input type="text" ng-model='msg'>
+		<h1>{{msg}}</h1>
+		
+		<h1 ng-clock class="ng-clock">{{msg}}</h1>
+		<h1 ng-bind="'信息' + msg"></h1>
+	</div>
+</body>
+<script src="../common/js/angular.min.js"></script>
+<script type="text/javascript">
+	angular.module('app', [])
+	.controller('MyCtrl', function($scope) {
+		$scope.msg = 'angular';
+		
+	})
+	.controller('SecondCtrl', function($scope) {
+		$scope.msg = 'angular';
+		
+	});
+</script>
+</html>

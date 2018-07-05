@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS $http</title>
+
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <style type="text/css">
+        html,body{font-size:14px;}
+    </style>
+</head>
+<body style="padding:10px;" ng-app="app">
+    <div ng-controller="MyCtrl">
+        <fieldset>
+            <legend>用户角色</legend>
+            <select ng-model="curselect">
+                <option>--请选择--</option>
+                <option ng-repeat="r in roles" value={{r.id}}>{{r.rolename}}</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>权限管理</legend>
+            <span ng-repeat="right in rights">
+                <input type="checkbox" ng-checked="right.ischecked">&nbsp;{{right.rightname}}
+            </span>
+        </fieldset>
+    </div>
+</body>
+<script src="js/angular.min.js"></script>
+<script src="role.js"></script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="todoList">
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../common/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/foundation.min.css"/>
+    <title></title>
+</head>
+<body style="padding:10px;" ng-controller="MyCtrl">
+
+</body>
+<script src="../common/js/angular.min.js"></script>
+<script type="text/javascript">
+	angular.module('app',[])
+	.config(function ($httpProvider) {
+	        
+	})
+	.controller('MyCtrl',function ($scope,$http) {
+	    $http.get('http://127.0.0.0.1:80/user/getUsers')
+	        .success(function (resp) {
+	            console.log(resp);
+	        })
+	})
+</script>
+</html>

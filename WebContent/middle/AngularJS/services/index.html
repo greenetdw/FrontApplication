@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../common/css/bootstrap.min.css"/>
+    <title></title>
+</head>
+<body style="padding:10px;" ng-app="app">
+	<div ng-controller='MyCtrl'>
+		<input type="text" ng-model='data.msg'>
+		<h1>{{data.msg}}</h1>
+		
+	</div>
+	<div ng-controller='SecondCtrl'>
+		<input type="text" ng-model='data.msg'>
+		<h1>{{data.msg}}</h1>
+		
+	</div>
+</body>
+<script src="../common/js/angular.min.js"></script>
+<script type="text/javascript">
+	angular.module('app', [])
+	.factory('data', function() {
+		return {
+			msg:'nihao'
+		}
+	})
+	.controller('MyCtrl', function($scope, data) {
+		$scope.data = data;
+	})
+	.controller('SecondCtrl', function($scope, data) {
+		$scope.data = data;
+	});
+</script>
+</html>

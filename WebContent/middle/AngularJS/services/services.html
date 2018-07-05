@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../common/css/bootstrap.min.css"/>
+    <title></title>
+</head>
+<body style="padding:10px;" ng-app="app">
+	<div ng-controller='MyCtrl'>
+		<div>{{realname + ',' + msg}}</div>
+		<h6>{{http}}</h6>
+		<h6>{{data.msg}}</h6>
+		<h6>{{data.setMsg()}}</h6>
+		<h6>{{username}}</h6>
+	</div>
+</body>
+<script src="../common/js/angular.min.js"></script>
+<script type="text/javascript">
+	angular.module('app', [])
+	.value('realname', 'zhaoliu')
+	.constant('http', 'www.baidu.com')
+	.factory('data', function() {
+		return {
+			msg:'nihao',
+			setMsg:function() {
+				this.msg = 'nohao';
+			}
+		}
+	})
+	.service('User', function() {
+		this.firstName = "Long";
+		this.lastName = "Li";
+		this.getName = function() {
+			return this.firstName + " " + this.lastName;
+		}
+	})
+	.controller('MyCtrl', function($scope, realname, http, data, User) {
+		$scope.msg = 'hello';
+		$scope.realname = realname;
+		$scope.http = http;
+		$scope.data = data;
+		$scope.username = User.getName();
+	})
+	;
+</script>
+</html>

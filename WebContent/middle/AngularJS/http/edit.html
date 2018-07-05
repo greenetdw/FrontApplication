@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS 进阶$http</title>
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <style type="text/css">
+        html,body{font-size: 14px;}
+    </style>
+</head>
+<body style="padding: 10px;" ng-app="app">
+    <div ng-controller="Myctrl"></div>
+    <input type="text" ng-model="id">
+    <input type="text" ng-model="name">
+    <button class="button" ng-click="adduser()">添加</button>
+    <button class="button" ng-click="deluser()">删除</button>
+</body>
+<script src="js/angular.min.js"></script>
+<script>
+angular.module('app',[])
+.config(function ($httpProvider) {
+        
+})
+.controller('MyCtrl',function ($scope,$http) {
+    $scope.id = "";
+    $scope.name="";
+    $scope.adduser = function(){
+        $http.get('http://127.0.0.0.1:80/user/addUser',{id:$scope.id,name:$scope.name})
+            .success(function (resp) {
+                if (resp.success) {
+                    alert("添加成功");
+                }
+            })
+    }
+    $scope.deluser=function () {
+        $http.post('http://127.0.0.1:80/user/delUser',{id:$scope.id})
+            .success(function () {
+                if(resp.success){
+                    alert('删除成功');
+                }
+            })
+    }
+})
+</script>
+</html>
