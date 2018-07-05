@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>拖放本地数据</title>
+        <style>
+            #imgContainer{
+                background-color: #CCCCCC;
+                width: 500px;
+                height: 500px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="imgContainer"></div>
+        <div id="msg"></div>
+        <script>
+            var imgContainer;
+            var msgDiv;
+            window.onload = function(){
+                imgContainer = document.getElementById("imgContainer");
+                msgDiv = document.getElementById("msg");
+                imgContainer.ondragover = function(e){
+                    e.preventDefault();
+                }
+                imgContainer.ondrop = function(e){
+                    e.preventDefault();
+                    var fileObj = e.dataTransfer.files[0];
+                    var fileReader = new FileReader();
+                    fileReader.onload = function(e){
+                        showObj(e.target);
+                        imgContainer.innerHTML = "<img src='"+e.target.result+"' width='100px' height='100px' />"
+                    }
+                    fileReader.readAsDataURL(fileObj);
+                }
+            }
+            function showObj(obj) {
+                var s = "";
+                for(var k in obj) {
+                    s += k + ":" + obj[k] + "<br/>";
+                }
+                msgDiv.innerHTML = s;
+            }
+        </script>
+    </body>
+
+</html>

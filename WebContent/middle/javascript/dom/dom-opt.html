@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		function setAttr(id) {
+			var node = document.getElementById(id);
+			node.setAttribute("title", "testtitle");
+		}	
+		
+		function getChildNode() {
+			var childNodes = document.getElementById("ul")[0].childNodes;
+		}
+		
+		function getParentNode() {
+			var div = document.getElementById("pid");
+			alert(div.parentNode.nodeName);
+		}
+		
+		function createNode() {
+			var body = document.body;
+			var input = document.createElement("input");
+			input.type = "buton";
+			input.value = "按钮";
+			body.appendChild(input);
+		}
+		
+		function addNode() {
+			var div = document.getElementById("div");
+			var node = document.getElementById("pid");
+			var newnode = document.createElement("p");
+			newnode.innerHTML = "newnode";
+			div.insertBefore(newnode, node);
+		}
+		
+		function getSize() {
+			var width = document.body.offsetWidth || document.documentElement.offsetWidth;
+			var height = document.body.offsetHeight;
+			
+		}
+	</script>
+
+</body>
+</html>

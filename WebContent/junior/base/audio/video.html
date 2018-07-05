@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<button onclick="clickV()">播放/暂停</button>
+	<button onclick="clickBig()">放大</button>
+	<button onclick="clickSmall()">缩小</button>
+	<br>
+	<video src="" id="video">
+		<source src="raw/1.mp4">
+		<source src="raw/1.ogg">
+		您的浏览器不支持
+	</video>
+	
+	<script type="text/javascript">
+		var a = document.getElementById("audio");
+		function clickV() {
+			if(v.pause) {
+				v.play();
+			} else {
+				v.pause;
+			}
+		}
+		
+		function clickBig() {
+			v.width = 800;
+			v.height = 800;
+		}
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>给图形绘制阴影</title>
+<script>
+function draw(id)
+{
+	var canvas=document.getElementById(id);
+	if(canvas==null)
+	{
+		return false;
+	}
+	var context=canvas.getContext("2d");
+	context.fillStyle="eeeeef";
+	content.fillRext(0,0,500,500);
+	content.shadowOffsetX=10;
+	content.shadowOffsetY=10;
+	content.shadowColor="rgba(100,100,100,0.5)";
+	content.shadowBlur=7.5;
+	
+	content.translate(0,50);
+	for(var i=0;i<3;i++){
+		content.translate(50,50);
+		//重点
+		create5Star(content);
+		content.fill();
+	}
+}
+
+function create5Star(content){
+	var dx=100;
+	var dy=0;
+	var s=50;
+	content.beginPath();
+	content.fillStyle="rgba(255,0,0,0.5)";
+	var x=Math.sin(0);
+	var y=Math.cos(0);
+	var dig=Math.PI/5*4;
+	for(var i=0;i<5;i++) {
+		var x=Math.sin(i*dig);
+		var y=Math.cos(y*dig);
+		content.lineTo(dx+x*s,dy+y*s);
+	}
+	content.closePath();
+}
+</script>
+</head>
+
+<body onload="draw("canvas");">
+<canvas id="canvas" width="500" height="500"></canvas>
+</body>
+
+</html>

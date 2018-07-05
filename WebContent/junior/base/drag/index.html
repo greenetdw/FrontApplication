@@ -1,0 +1,68 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script type="text/javascript">
+        var box1div, msgDiv, img1, box2div;
+        window.onload = function () {
+            box1div = document.getElementById("box1");
+            box2div = document.getElementById("box2");
+            msgDiv = document.getElementById("msg");
+            img1 = document.getElementById("img1");
+            //            拖拽
+            //            box1div.ondragenter = function (e) {
+            //                showobj(e);
+            //            }
+            box1div.ondragover = function (e) {
+                //组织系统默认操作
+                e.preventDefault();
+            }
+            box1div.ondrop = dropimghandler;//放下的操作
+            box2div.ondragover = function (e) {//拖拽操作
+                //组织系统默认操作
+                e.preventDefault();
+            }
+            box2div.ondrop = dropimghandler;
+            img1.ondragstart = function (e) {//启动
+                e.dataTransfer.setData("imgId", "img1");
+            }
+
+
+        }
+        function dropimghandler(e) {//放的功能
+            showobj(e.dataTransfer);
+            e.preventDefault();
+
+
+            var img = document.getElementById(e.dataTransfer.getData("imgId"));
+            //  box1div.appendChild(img);添加到boxdiv种
+            e.target.appendChild(img);//目标div添加内容
+
+
+        }
+        function showobj(obj) {
+            var s = "";
+            for (var k in obj) {
+                s += k + ":" + obj[k] + "<br/>";
+            }
+            msgDiv.innerHTML=s;
+        }
+    </script>
+    <style type="text/css">
+    .box{ width:400px; height:400px;}
+    #box1{ background:#cccccc; float:left;}
+        #box2{ background:#0000ff; float:left;}
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="box1" class="box">
+    
+    </div>
+    <div id="box2" class="box">
+    
+    </div>
+    <img id="img1" src="1.png" />
+    <div id="msg"></div>
+    </form>
+</body>
+</html>

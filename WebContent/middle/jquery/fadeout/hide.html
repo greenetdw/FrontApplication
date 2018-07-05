@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#hide").click(function(){
+			$("p").hide(1000);
+		});
+		$("#show").click(function(){
+			$("p").show(1000);
+		});
+		
+		$("#toggle").click(function(){
+			$("p").toggle(1000);
+		});
+	});
+</script>
+</head>
+<body>
+	<p>hello</p>
+	
+	<button id="hide">隐藏</button>
+	<button id="show">显示</button>
+	
+	<button id="toggle">显示/隐藏</button>
+</body>
+</html>

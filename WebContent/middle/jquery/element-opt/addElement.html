@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			$("#p1").append("this is my page");
+			$("#p1").prepend("this is my page");
+			
+			$("#p2").after("hello");
+		});
+	});
+	
+	function appendText() {
+		var text1 = "<p>iwen</p>";
+		var text2 = $("<p></p>").text("ime");
+		var text3 = document.getElementById("p");
+		text3.innerHTML = "ace";
+		
+		$("body").append(text1, text2, text3);
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

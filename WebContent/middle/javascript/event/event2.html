@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="div">
+		<button id="btn1">按钮</button>
+	</div>
+	<a id="aid" href="https://www.baidu.com">baidu</a>
+	<script type="text/javascript">
+		document.getElementById("btn1").addEventListener("click", showType);
+		document.getElementById("div").addEventListener("click", showDiv);
+		document.getElementById("aid").addEventListener("click", showA);
+		
+		function showType(event) {
+			alert(event.type);
+			alert(event.target);
+			event.stopPropagation();
+		}
+		
+		function showDiv() {
+			alert("div");
+		}
+		
+		function showA(event) {
+			event.stopPropagation();
+			event.preventDefault();
+		}
+	</script>
+</body>
+</html>

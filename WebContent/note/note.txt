@@ -1,0 +1,55 @@
+不同于H4：
+	1.DOCTYPE
+	2.字符编码
+
+全局属性：
+	contentEditable
+	hidden
+	tabindex
+	
+section注意事項：
+	1.不要將section作为设置样式的页面容器
+	2.如果article, aside, nav元素更符合使用条件，那不要使用section
+	3.没有标题内容，不要使用section
+	
+nav应用场景：
+	传统导航条，侧边栏导航，页内导航，翻页操作
+	menu不能代替nav
+	
+ffmpeg -i 3.mp4 -acodec libvorbis 3.ogg
+
+HTML5在移动开发中的准则：
+	尽量使用单页面（SPA）
+	慎重选择前端框架
+	动画、特效（60fps）
+	长度单位使用rem
+
+浏览器消耗最小的
+位置：transform:translate(x,y,z)
+大小：transform:scale(n)
+旋转：transfrom:rotate(ndeg)
+透明度：opacity:0...1
+http://csstriggers.com
+
+页面基本布局：
+	流式布局 - 适合内容型应用
+	绝对定位布局 - 适用交互类应用
+	FlexBox布局 - 适合局部适用（Anddoid4.1 + ios7+）
+	Css Grid Layout（15.3 WD Chrome）暂时未在手机验证
+	
+事件流：
+	页面中接受事件的顺序
+事件冒泡：最具体的元素接受，然后逐级向上传播至最不具体元素的节点   VS 事件捕获 （与之相反）
+
+
+css3中追加了三个属性选择器，分别为：[att*=val],[att^=val], [att$=val] 分别表示
+	选择具有att属性且属性值为包含val的字符串的E元素。
+	att属性以val开头
+	att属性以val结尾
+	
+
+
+
+	
+	
+

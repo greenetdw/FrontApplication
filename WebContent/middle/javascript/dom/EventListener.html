@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<button id="btn">按钮</button>
+	<script type="text/javascript">
+		var x = document.getElementById("btn");
+		x.addEventListener("click", hello);
+		x.addEventListener("click", world);
+		x.removeEventListener("click", hello);
+		
+		function hello() {
+			alert("hello");
+		}
+		
+		function world() {
+			alert("world");
+		}
+	</script>
+</body>
+</html>

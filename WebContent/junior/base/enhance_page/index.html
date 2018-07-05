@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<figure>
+		<img alt="" src="1.jpg">
+		<img alt="" src="2.jpg">
+		<img alt="" src="3.jpg">
+		<figcaption>水果</figcaption>
+	</figure>
+	
+	<script type="text/javascript">
+		function detailOnclick(detail) {
+			var p = document.getElementById("p");
+			if(detail.open) {
+				p.style.visibility = "hidden";
+			} else {
+				p.style.visibility = "visible";
+			}
+		}
+	</script>
+	<details>
+		<summary id="detail" onclick="detailOnclick(this)">速度与激情7</summary>
+		<p id="p" style="visibility: hidden;">你好么，这是为保罗特意打造的电影</p>
+	</details>
+	<p>这是一段<mark>测试</mark>数据</p>
+</body>
+</html>

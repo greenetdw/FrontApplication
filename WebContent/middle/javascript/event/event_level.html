@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="div">
+		<button id="btn1">按钮</button>
+	</div>
+	<script type="text/javascript">
+		function demo1() {
+			alert("HTML事件");//html中的onclick
+		}
+		
+		//DOM0级会后面覆盖前面的
+		/* var btn1 = document.getElementById("btn1");
+		btn1.onclick = function() {
+			alert("DOM0级事件处理程序1");
+		}
+		btn1.onclick = function() {
+			alert("DOM0级事件处理程序2");
+		} */
+		
+		//DOM2级事件处理
+		/* var btn1 = document.getElementById("btn1");
+		btn1.addEventListener("click", demo1);//第三个参数指定用冒泡事件处理方式还是捕获的事件方式，默认为冒泡
+		btn1.addEventListener("click", demo2);
+		function demo1() {
+			alert("DOM2级事件处理程序1");
+		}
+		function demo2() {
+			alert("DOM2级事件处理程序2");
+		} */
+		var btn1 = document.getElementById("btn1");
+		if(btn1.addEventListener) {
+			btn1.addEventListener("click", demo);
+		} else if (btn1.attachEvent) {//兼容IE8以下版本
+			btn1.attachEvent("onclick", demo)
+		} else {
+			btn1.onclick = demo();
+		}
+		
+		function demo() {}
+		
+		
+	</script>
+</body>
+</html>

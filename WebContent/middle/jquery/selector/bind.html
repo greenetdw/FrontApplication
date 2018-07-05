@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		/* $("#btn").click(function(){
+			console.log("hello");
+		});
+		$("#btn").bind("click", clickHandler1);
+		$("#btn").unbind("click"); */
+		
+		$("#btn").on("click", clickHandler1);
+	});
+	
+	function clickHandler1() {
+		console.log("clickHandler1");
+	}
+	
+</script>
+</head>
+<body>
+	<button id="btn">按钮</button>
+</body>
+</html>

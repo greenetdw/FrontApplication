@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>使用图像</title>
+<script>
+function draw(id){
+	var canvas=document.getElementById(id);
+	var context=canvas.getContext("2d");
+	context.fillStyle="#eeeeef";
+	content.fillRect(0,0,500,500);
+	image=new Image();
+	image.src="ic_laucher.png";
+	image.onload=function(){
+		//重点
+		drawImage(content,image);
+	}
+}
+
+function drawImage(content,image){
+	//drawImage,这个方法是系统自带的
+	content.drawImage(image,0,0,200,200);
+	content.drawImage(image,270,270,380,380,230,230,100,100);
+}
+</script>
+</head>
+
+<body onload="draw("canvas");">
+<canvas id="canvas" width="500" height="500"></canvas>
+</body>
+
+</html>

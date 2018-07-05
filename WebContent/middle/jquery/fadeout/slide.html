@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#content , #flipshow, #fliphide {
+		padding:5px;
+		text-align:center;
+		background-color: yellow;
+		border:1px solid red;
+	}
+	
+	#content {
+		display:none;
+	}
+</style>
+
+<script type="text/javascript" src="../jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#flipshow").click(function(){
+			$("#content").slideDown(1000);
+		});
+		$("#fliphide").click(function(){
+			$("#content").slideUp(1000);
+		});
+	});
+</script>
+
+</head>
+<body>
+	<div id="flipshow">显示</div>
+	<div id="fliphide">隐藏</div>
+	<div id="content">Hello</div>
+</body>
+</html>

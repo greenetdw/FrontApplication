@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../jquery.min.js"></script>
+	<script type="text/javascript">
+		/* $.noConflict();
+		jQuery(document).ready(function (){
+			//$.myjq();
+			jQuery("div").myjq();
+		}); */
+		
+		var myjq = $.noConflict();
+		myjq(document).ready(function (){
+			//$.myjq();
+			myjq("div").attr("title","test");
+		});
+	</script>
+</head>
+<body>
+
+</body>
+</html>

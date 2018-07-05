@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#btn").click(function(){
+			$("#aid").attr({
+				"title":"hello",
+				"href":"www.baidu.com"
+			});
+			
+			$("#text").text(function(i, ot){
+				return "old content: " + ot + " new Content " + i;
+			});
+		});
+	});
+</script>
+</head>
+<body>
+	<p id="text">this is my webpage <a>这是一个a标签</a></p>
+	<a id="aid">测试</a>
+	<button id="btn"></button>
+</body>
+</html>

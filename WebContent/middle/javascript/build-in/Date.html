@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="timetxt"></div>
+	<script type="text/javascript">
+		var date = new Date();
+		console.log(date.getFullYear());
+		date.setFullYear(2010, 1, 1);
+		console.log(date);
+		
+		function startTime() {
+			var today = new Date();
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById("timetxt").innerHTML = h + ":" + m + ":" + s;
+			t = setTimeout(function() {
+				startTime();
+			}, 500);
+		}
+		
+		function checkTime(i) {
+			if(i < 10) {
+				i = "0" + i;
+			}
+			return i;
+		}
+		
+		startTime();
+	</script>
+	
+	
+</body>
+</html>

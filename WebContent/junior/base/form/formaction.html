@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form id="testform">
+		<input type="text" required="required">
+		<input type="text" autofocus="autofocus">
+		<input type="submit" name="s1" value="v1" formaction="xxx.jsp" formmethod="get" formenctype="text/plain">
+		<input type="submit" name="s2" value="v2" formaction="xxx2.jsp" formenctype="application/x-www-form-urlencoded">
+		<input type="submit" name="s1" value="v1" formaction="xxx.jsp" formmethod="get" formenctype="multipart/form-data">
+		<input type="submit" formtarget="_blank">
+		<input type="submit" formtarget="_parent">
+		<input type="submit" formtarget="_self">
+		<input type="submit" formtarget="framename">
+	</form>
+</body>
+</html>

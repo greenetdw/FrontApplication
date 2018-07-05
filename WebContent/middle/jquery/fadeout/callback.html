@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#p").hide(1000, function(){
+				alert("动画结束");
+			});
+		});
+		
+		$("#p").css("color", "red").slideUp(1000).slideDown(1000);
+	});
+</script>
+</head>
+<body>
+	<div id="p">显示</div>
+	<button>按钮</button>
+</body>
+</html>

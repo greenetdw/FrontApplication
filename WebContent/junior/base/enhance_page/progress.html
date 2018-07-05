@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function btn() {
+			/* for(var i = 0; i < 100; i+=) {
+				setTimeout(function() {
+					updateProgress(i);
+				}, 2000);
+			} */
+			
+			var i = 0;
+			function thread_one() {
+				if(i <= 100) {
+					i++;
+					updateProgress(i);
+				}
+			}
+			setInterval(thread_one, 100);
+		}
+	
+		function updateProgress(newValue) {
+			var progressBar = document.getElementById("p");
+			progressBar.value = newValue;
+			progressBar.getElementsByTag("span")[0].textContent = newValue;
+		}
+	</script>
+
+	<section>
+		<h2>progress元素使用</h2>
+		<p>完成的百分比<progress id="p" max="100" style="background-color:#269abc;"><span>0</span>%</progress></p>
+		<input type="button" onclick="btn();" value="点击">
+	</section>
+	
+	<meter value="40" min="0" max="100" low="10" high="90" optimum="80"></meter>
+	<meter value="">40/100</meter>
+</body>
+</html>

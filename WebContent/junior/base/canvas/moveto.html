@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+</script>
+</head>
+<body>
+	<canvas id="demo-canvas" width="800" height="800">
+		您的浏览器不支持<canvas>,建议升级。
+	</canvas>
+	<script type="text/javascript">
+	var canvas = document.getElementById("demo-canvas");
+	if (canvas.getContext){
+	    var context = canvas.getContext("2d"); 
+	        context.fillStyle = "#EEEEFF";
+	        context.fillRect(0, 0, 400, 300);
+	        var n = 0;
+	        var dx = 150;
+	        var dy = 150;
+	        var s = 100;
+	        context.beginPath();
+	        context.fillStyle = 'rgb(100,255,100)';
+	        context.strokeStyle = 'rgb(0,0,100)';
+	        var x = Math.sin(0);
+	        var y = Math.cos(0);
+	        var dig = Math.PI / 15 * 11;
+	        for (var i = 0; i < 30; i++) {
+	            var x = Math.sin(i * dig);
+	            var y = Math.cos(i * dig);
+	            context.lineTo(dx + x * s, dy + y * s);
+	        }
+	        context.closePath();
+	        context.fill();
+	        context.stroke();
+	}
+	</script>
+</body>
+</html>
+
+

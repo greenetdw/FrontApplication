@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function cloneRange() {
+			var rangeObj = document.createRange();
+			rangeObj.selectNodeContents(document.getElementById("p"));
+			var rangeClone = rangeObj.cloneRange();
+			alert(rangeClone.toString())
+		}
+	</script>
+	<p id="p">这是随便书写的内容</p>
+	<button onclick="cloneRange()">克隆</button>
+</body>
+</html>

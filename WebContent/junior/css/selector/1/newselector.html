@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	:root {background-color: darkgrey;}
+	body {background-color: darkgreen;}
+	div *:not(h1) {
+		color:crimson;
+	}
+	:empty {background-color: darkviolet;}
+	:target {background-color: yellow;}
+</style>
+</head>
+<body>
+	<div>
+		<h2>你好么？</h2>
+		<h1>这里是标题</h1>
+		<p>这里是一个p标签</p>
+	</div>
+	<table>
+		<tr>
+			<td>内容1</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>内容1</td>
+		</tr>
+	</table>
+	
+	<a href="#a1">菜单1</a>
+	<div id="a1">
+		<h1>菜单1</h1>
+		<p>菜单内容</p>
+	</div>
+</body>
+</html>

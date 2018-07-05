@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function draw(id){
+            var canvas = document.getElementById(id);
+            if(canvas == null){
+                return false;
+            }
+            var context = canvas.getContext("2d");
+            context.fillStyle = "#eeeeef";
+            context.fillRect(0,0,500,500);
+            context.translate(300,50);
+            context.fillStyle="rgba(255,0,0,0.25)";
+            for(var i=0; i<500; i++){
+                context.fillRect(0,0,80,30);
+                context.translate(20,20);
+                context.scale(0.99,0.99);
+                context.rotate(Math.PI/20);
+ 
+            }
+        }
+    </script>
+</head>
+<body onload="draw('canvas')">
+    <canvas id="canvas" width="500" height="500"></canvas>
+</body>
+</html>

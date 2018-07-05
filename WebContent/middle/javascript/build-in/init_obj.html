@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		people = new Object();
+		people.name = "tim";
+		people.age = 30;
+		
+		people = {name:'tom', age:26};
+		
+		function people(name, age) {
+			this.name = name;
+			this.age = age;
+		}
+		people = new people("iwn"", 30);
+		console.log(people.name + ", " + people.age)
+	</script>
+</body>
+</html>

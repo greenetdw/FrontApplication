@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script src="../jquery.min.js"></script>
+	<script type="text/javascript">
+		$.myjq = function() {
+			alert("hello myjq");
+		}
+		
+		$.fn.myjq = function() {
+			$(this).text("hello");
+		}
+		
+		$(document).ready(function (){
+			//$.myjq();
+			$("div").myjq();
+		});
+	</script>
+</head>
+<body>
+	<div>测试</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function cloneContent() {
+			var rangeObj = document.createRange();
+			rangeObj.selectNodeContents(document.getElementById("div"));
+			//var rangeClone = rangeObj.cloneRange();
+			//alert(rangeClone.toString())
+			
+			var docFragment = rangeObj.cloneContents();
+			div.appendChild(docFragment);
+		}
+	</script>
+	<div id="div">
+		你好么?<br>
+		<button onclick="cloneContent()">克隆</button>
+	</div>
+	
+</body>
+</html>

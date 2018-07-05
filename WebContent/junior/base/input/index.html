@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="">
+		<input name="url" type="url" value="http://www.baidu.com">
+		<input type="datetime-local" name="datetime-local">
+		<input type="submit" value="提交">
+	</form>
+	<br>
+	
+	<script type="text/javascript">
+		function sum() {
+			var n1 = document.getElementById("num1").valueAsNumber;
+			var n2 = document.getElementById("num2").valueAsNumber;
+			document.getElementById("result").valueAsNumber = n1 + n2;
+		}
+	</script>
+	
+	<form action="">
+		<input type="number" id="num1">
+		<input type="number" id="num2">
+		<input type="number" id="result" readonly="readonly">
+		<input type="button" value="计算" onclick="sum();">
+	</form>
+	
+	<input name="range" type="range" value="25" min="0" max="100" step="5">
+	<input type="search">
+	<input id="color" type="color" onchange="document.body.style.backgroundColor = document.getElementById('currentColor').textContent = this.value;">
+	<span id="currentColor"></span>
+	<br>
+	<script type="text/javascript">
+		function valueChange() {
+			var num = document.getElementById("range").value;
+			document.getElementById("output").value = num;
+		}
+	</script>
+	<form action="" id="testForm">
+		<input type="range" id="range" min="0" max="100" step="5" value="10" onchange="valueChange()">
+		<output id="output">10</output>
+	</form>
+	
+</body>
+</html>

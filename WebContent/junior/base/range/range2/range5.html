@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function testPlace() {
+			var boldText = document.getElementById("boldTest");
+			var boldRange = document.createRange();
+			boldRange.selectNodeContents(boldText.firstChild);
+			var selection = document.getSelection();
+			if(selection.rangeCount > 0) {
+				var selRange = selection.getRangeAt(0);
+				if(selRange.compareBoundaryPoints(Range.START_TO_END, boldRange) <= 0) {
+					alert("选取的文字在粗体的前面");
+				} else {
+					if (selRange.compareBoundaryPoints(Range.END_TO_START, boldRange) > 0) {
+						alert("选取的文字在粗体的后面");
+					}
+				}
+			}
+		}
+		
+	</script>
+	这是一段文字，我也不<b id="boldTest">知道</b>些什么。随便吧
+	<br/>
+	<button onclick="testPlace();">位置比较</button>
+</body>
+</html>

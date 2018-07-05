@@ -1,0 +1,22 @@
+@charset "utf-8";
+ul{padding:0;margin:0;/*清除子菜单中的缩进*/}
+ul,li{list-style:none;/*清除ul、li上默认的小圆点*/}
+a{text-decoration: none;}
+li{background: #eeeeee;/*backgroun-image会覆盖background-color*/}
+.list{margin-top:20px;}
+.menu,.hmenu{background:/* url(timg18.jpg) */ repeat-x left center;width:130px;line-height: 30px;}
+.menu a,.hmenu a{
+    text-decoration: none;/*取消下划线*/
+    display:block;/*填充整个区域*/
+    /*以下两行专门为IE6写*/
+    display:inline-block;
+    width:105px;
+    color:#fff;
+    padding-top:3px;
+    padding-bottom:3px;
+    padding-left:25px;
+    background: /* url(down.png) */black no-repeat 3px center;
+}
+.menu li a,.hmenu li a{background:none;color:#666}
+.menu ul,.hmenu ul{display:none;/*隐藏子菜单项*/}
+.hmenu{float:left;margin-left:1px;}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function check() {
+			var email = document.getElementById("email");
+			if(email.value == "") {
+				alert("请输入email");
+				return false;
+			} else if (!email.checkValidity()) {
+				alert("请输入正确的email");
+			}
+		}
+		
+	</script>
+	<form action="" onsubmit="check()" novalidate="novalidate">
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email"><br/>
+		<input type="submit">
+	</form>
+</body>
+</html>

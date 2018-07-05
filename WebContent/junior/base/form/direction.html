@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function AD() {
+			var control = document.forms[0]['text'];
+			var direction = control.selectionDirection;
+			alert(direction);
+		}
+	</script>
+	<form action="">
+		<input type="text" name="text">
+		<input type="button" value="点击我" onclick="AD();">
+	</form>
+</body>
+</html>
