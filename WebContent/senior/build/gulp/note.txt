@@ -1,0 +1,16 @@
+
+npm install --global gulp
+
+npm install --save-dev gulp
+
+npm init
+
+create gulpfile.js
+
+执行gulp
+
+npm install gulp-uglify --save-dev
+npm install gulp-concat --save-dev
+
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zn-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>React</title>
+</head>
+<body>
+<script src="../react-0.13.2/build/react.js"></script>
+<script src="../react-0.13.2/build/JSXTransformer.js"></script>
+<script type="text/jsx">
+    var style={
+        color:"red",
+        border:"1px solid #000"
+    };
+
+    var rawHTML = {
+        __html:"<h1>I'm inner HTML</h1>"
+    };
+
+    var HelloWorld = React.createClass({
+        render:function () {
+            return <p>Hello, {this.props.name || "world"}</p>
+        }
+    });
+    React.render(<div style={style} dangerouslySetInnerHTML={rawHTML}></div>,document.body);
+</script>
+</body>
+</html>

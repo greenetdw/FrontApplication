@@ -1,0 +1,14 @@
+install command:
+
+    npm install -g grunt-cli
+    cd E:\gruntTest
+    npm install grunt --save-dev
+    add Gruntfile.js
+    
+    npm install grunt-contrib-uglify --save-dev
+    npm install grunt-contrib-concat --save-dev
+    npm install grunt-contrib-watch --save-dev
+    
+
+
+
