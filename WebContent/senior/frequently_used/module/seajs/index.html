@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript" src="js/sea.js"></script>
+	<script type="text/javascript">
+		// seajs 的简单配置
+		seajs.config({
+			base : "./js/",
+			alias : {
+				"jquery" : "jquery.js"
+			}
+		})
+
+		// 加载入口模块
+		seajs.use("main");
+	</script>
+</body>
+</html>

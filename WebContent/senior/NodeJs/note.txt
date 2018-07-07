@@ -1,0 +1,13 @@
+
+VirtualBox
+虚拟机安装CentOS
+xShell和xFTP
+Node.js
+MongoDB
+redis
+sublime Text
+WebStorm
+
+express框架
+npm install express --save
+
