@@ -1,0 +1,8 @@
+
+nodejs install
+install typescript: npm install -g typescript
+execute : tsc -v
+
+tsc app.ts 编译ts
+
+

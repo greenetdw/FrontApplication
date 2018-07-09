@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function test() {
+			if(false) {
+				var i = 10;
+			}
+			//console.log(i);
+			
+			//console.log(j);
+			
+			
+			var k = 1000;
+			return function() {
+				return k;
+			}
+		}
+		
+		//test();
+		
+		var t = test()();
+		console.log(t);
+	</script>
+</body>
+</html>

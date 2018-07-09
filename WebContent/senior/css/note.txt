@@ -1,0 +1,50 @@
+1.不要直接定义子节点，应把共性声明放到父类
+.mod .inner {}
+.inner {}  //不建议
+
+2.结构和皮肤分离
+
+<div class="container simpleExt"></div>
+
+.container 控制结构css
+.simpleExt 控制皮肤css
+
+3.容器和内容分离
+
+<div class="container"><ul><li>...</li></ul></div>
+.container ul {} //ul依赖了容器
+<div class="container"><ul class="rankList><li>...</li></ul></div>
+.rankList ul {} //解除依赖，可以从一个容器移植到另外一个容器
+
+4.抽象出可重用元素，建好组件库，在组件库内找可用的元素组装页面
+
+5.往你想要扩展的对象本身增加class而不是父节点
+
+6.对象应保持独立性
+<dic class="container"><div  class="mod"></div></div>
+
+.container {} .container .mod {}//控制结构的class
+<div class=".container .mod"></div>
+
+7.避免使用id选择器
+
+8.避免位置相关的样式 
+
+9.保证选择器相同的权重
+
+10类名简短清晰语义化
+
+oocss
+reset css
+normalize css
+neat css
+
+
+
+
+
+
+
+
+
+
