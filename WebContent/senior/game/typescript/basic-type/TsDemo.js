@@ -356,3 +356,4 @@ alert(buildLabel("Sam Smith"));
 //class test{
 //
 //} 
+//# sourceMappingURL=TsDemo.js.map

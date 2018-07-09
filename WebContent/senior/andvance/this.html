@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/* this.m = 100;
+		
+		function test() {
+			alert(this.m);
+		}
+		
+		window.test(); */
+		
+		//this是指谁调用指谁
+		this.m = 1000;
+		var obj = {
+			m : 100,
+			test : function() {
+				alert(this.m);
+				return function() {
+					alert(this.m);
+				}
+			}
+		}
+		(obj.test())();
+		
+	</script>
+</body>
+</html>

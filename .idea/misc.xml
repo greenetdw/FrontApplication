@@ -3,9 +3,7 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="JSX" />
   </component>
-  <component name="ProjectRootManager">
-    <output url="file://$PROJECT_DIR$/out" />
-  </component>
+  <component name="ProjectRootManager" version="2" />
   <component name="masterDetails">
     <states>
       <state key="ProjectJDKs.UI">

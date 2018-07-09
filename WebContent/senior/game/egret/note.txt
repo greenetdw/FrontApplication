@@ -1,0 +1,17 @@
+
+nodejs
+typescript
+http服务器(xampp  apache, mysql, php)
+chrome
+egret(EgretEngine-v1.1.4.exe)
+
+在cmd中执行：
+egret create HelloWorld
+egret build HelloWorld
+egret startserver HelloWorld
+
+
+
+
+
+
