@@ -1,6 +1,8 @@
 1.下载python2.7
-2.下载cosos2d-js V3.3
+2.下载cocos2d-js V3.3
+3.Cocos Code IDE 1.2.0
 
+cocos Frameworks -> Engine Mode
 
 
 

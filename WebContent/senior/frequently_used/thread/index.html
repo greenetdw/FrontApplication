@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>JavaScript多线程</title>
+<!-- 	<script type="text/javascript" src="Concurrent.Thread.js"></script> -->
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			cursor: pointer;
+			background: orange;
+		}
+	</style>
+</head>
+<body>
+<div id="test">
+	测试点击
+</div>
+<script type="text/javascript">
+ // Concurrent.Thread.create(function(){
+	// $('#test').click(function  () {
+	// 	alert(1);
+	// });
+	// /*下面有一段特别复杂的函数*/
+	// for (var i = 0;i<1000000;i++) {
+	// 	console.log(i);
+	// };
+ // });
+/*异步事件队列*/
+//alert(1);
+$('#test').click(function  () {
+	alert(1);
+});
+// var worker = new Worker("task.js");
+// worker.onmessage = function(event){
+//          // 消息文本放置在data属性中，
+//        alert(event.data);
+// }
+// worker.postMessage(10000000);
+var worker = new SharedWorker('task9.js'); 
+  worker.port.addEventListener('message', function(e) { 
+	 console.log(e.data);
+  }, false); 
+worker.port.start(); 
+worker.port.postMessage('100'); 
+</script>
+</body>
+</html>
