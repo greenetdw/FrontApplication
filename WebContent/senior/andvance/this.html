@@ -6,6 +6,7 @@
 </head>
 <body>
 	<script type="text/javascript">
+		//js array和对象 是按照引用传递参数
 		/* this.m = 100;
 		
 		function test() {
@@ -13,9 +14,9 @@
 		}
 		
 		window.test(); */
-		
+
 		//this是指谁调用指谁
-		this.m = 1000;
+		/* this.m = 1000;
 		var obj = {
 			m : 100,
 			test : function() {
@@ -25,8 +26,36 @@
 				}
 			}
 		}
-		(obj.test())();
+		(obj.test())(); */
+
+		/* function test() {
+			alert(this.style.color);
+		}
 		
+		document.getElementById("test").onclick = test();
+		 */
+
+		/* this.a = 1000;
+
+		function test() {
+			this.a = 1;
+		}
+
+		test.prototype.geta = function() {
+			return this.a;
+		}
+		
+		var p = new test;
+		console.log(p.geta()); */
+		
+		function test() {
+			this.a = 1;
+		}
+		
+		test.prototype.a = 100;
+		
+		var p = new test;
+		console.log(p.a);
 	</script>
 </body>
 </html>
