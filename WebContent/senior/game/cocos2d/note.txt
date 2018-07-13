@@ -1,6 +1,8 @@
 1.下载python2.7
-2.下载cocos2d-js V3.3
+2.下载cocos2d-js V3.3	http://www.cocoachina.com/bbs/read.php?tid=284084
 3.Cocos Code IDE 1.2.0
+
+开发环境搭建 https://blog.csdn.net/datouniao1/article/details/56280606
 
 cocos Frameworks -> Engine Mode
 

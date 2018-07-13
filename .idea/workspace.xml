@@ -2,27 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c3814b2-af88-4cb2-8fa1-a344c37451e7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/L08_MyCard/resource/assets/bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/L08_MyCard/resource/assets/egret_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/L08_MyCard/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/L08_MyCard/src/Card.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/L08_MyCard/.idea/L08_MyCard.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/L08_MyCard/src/Main.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/Music/src/Mysound.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/L08_MyCard/resource/config/description.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/L08_MyCard/egretProperties.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/L08_MyCard/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/L08_MyCard/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/L08_MyCard/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/Music/resource/assets/music.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/L04_TextureMaps/note.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/L08_MyCard/resource/resource.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/L08_MyCard/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/L08_MyCard/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/L08_MyCard/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/L08_MyCard/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/senior/game/cocos2d/note.txt" afterPath="$PROJECT_DIR$/WebContent/senior/game/cocos2d/note.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/HelloGui/src/Button.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/HelloGui/src/HelloGui.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/HelloGui/src/SelectBtn.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/middle/AngularJS/directive/directive3/js/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/middle/AngularJS/directive/directive3/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/middle/AngularJS/directive/directive3/css/foundation.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/middle/AngularJS/directive/directive3/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/senior/game/egret/Music/src/Mysound.ts" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/Music/src/Mysound.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/senior/game/egret/note.txt" afterPath="$PROJECT_DIR$/WebContent/senior/game/egret/note.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -95,7 +83,6 @@
         <option value="$PROJECT_DIR$/WebContent/senior/game/typescript/basic-type/ArrayDemo.ts" />
         <option value="$PROJECT_DIR$/WebContent/senior/game/typescript/basic-type/module.js" />
         <option value="$PROJECT_DIR$/WebContent/senior/game/typescript/basic-type/TsDemo.ts" />
-        <option value="$PROJECT_DIR$/WebContent/senior/game/egret/note.txt" />
         <option value="$PROJECT_DIR$/WebContent/senior/game/egret/DisplayContainer/src/AddView.ts" />
         <option value="$PROJECT_DIR$/WebContent/senior/game/egret/DisplayObject/src/HelloWolrdExtentions.ts" />
         <option value="$PROJECT_DIR$/WebContent/senior/game/egret/DisplayObject/src/DisplayObject.ts" />
@@ -109,7 +96,12 @@
         <option value="$PROJECT_DIR$/WebContent/senior/game/egret/L04_TextureMaps/note.txt" />
         <option value="$PROJECT_DIR$/WebContent/senior/game/cocos2d/note.txt" />
         <option value="$PROJECT_DIR$/WebContent/senior/game/egret/Music/resource/resource.json" />
+        <option value="$PROJECT_DIR$/WebContent/middle/AngularJS/directive/js/app.js" />
         <option value="$PROJECT_DIR$/WebContent/senior/game/egret/Music/src/Mysound.ts" />
+        <option value="$PROJECT_DIR$/WebContent/senior/game/egret/note.txt" />
+        <option value="$PROJECT_DIR$/WebContent/senior/game/egret/HelloGui/src/HelloGui.ts" />
+        <option value="$PROJECT_DIR$/WebContent/senior/game/egret/HelloGui/src/Button.ts" />
+        <option value="$PROJECT_DIR$/WebContent/senior/game/egret/HelloGui/src/SelectBtn.ts" />
       </list>
     </option>
   </component>
@@ -156,6 +148,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -187,11 +181,27 @@
               <option name="myItemId" value="WebContent" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="senior" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontApplication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontApplication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -207,14 +217,15 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="egre&#9;FILE&#9;file://F:/workspace/FrontApplication/WebContent/senior/game/egret/DisplayObject/egretProperties.json" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\workspace\FrontApplication\WebContent\middle\AngularJS\directive" />
       <recent name="F:\workspace\FrontApplication\WebContent\senior\game\egret" />
       <recent name="F:\workspace\FrontApplication\WebContent\senior\game\egret\fighter" />
       <recent name="F:\workspace\FrontApplication\WebContent\senior\game\egret\Time\src" />
       <recent name="F:\workspace\FrontApplication\WebContent\senior\game\egret\Time" />
-      <recent name="F:\workspace\FrontApplication\WebContent\senior\game\typescript\basic-type" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -337,7 +348,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32876712" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -403,52 +414,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebContent/senior/game/egret/DisplayContainer/src/AddView.ts" />
-    <entry file="file://$PROJECT_DIR$/WebContent/senior/game/egret/DisplayObject/src/HelloWolrdExtentions.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/senior/game/egret/DisplayObject/src/Mask.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/senior/game/egret/DisplayContainer/src/CardMain.ts" />
-    <entry file="file://$PROJECT_DIR$/WebContent/senior/game/egret/DisplayContainer/src/Card.ts" />
-    <entry file="file://$PROJECT_DIR$/WebContent/senior/game/egret/DisplayObject/src/DisplayObject.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/senior/game/egret/DisplayObject/src/HitTest.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="28" selection-start-line="6" selection-start-column="4" selection-end-line="20" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/senior/game/egret/DisplayObject/src/AnchorText.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/senior/game/egret/DisplayObject/egretProperties.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/middle/ReactJS/form/2、可控组件实例.html" />
     <entry file="file://$PROJECT_DIR$/WebContent/middle/ReactJS/form/6、不可控的自定义组件.html" />
     <entry file="file://$PROJECT_DIR$/WebContent/middle/ReactJS/form/4、bind复用.html" />
     <entry file="file://$PROJECT_DIR$/WebContent/middle/ReactJS/form/5、name复用.html" />
@@ -507,13 +472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/senior/game/egret/L04_TextureMaps/src/BitmapTest.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -590,7 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29840142">
           <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -598,17 +555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="39" column="44" selection-start-line="34" selection-start-column="4" selection-end-line="39" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/senior/game/egret/Music/src/Mysound.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43535188">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc;n#Mysound#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -616,7 +562,106 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/middle/AngularJS/directive/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.26087">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/middle/AngularJS/directive/directive3/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71031094">
+          <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/senior/game/egret/DisplayObject/egretProperties.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/senior/game/egret/Music/src/Mysound.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42716858">
+          <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/senior/game/egret/note.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3207856">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/senior/game/egret/L04_TextureMaps/src/BitmapTest.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="44" selection-start-line="6" selection-start-column="4" selection-end-line="11" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/senior/game/egret/HelloGui/src/AssetAdapter.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6415712">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/senior/game/egret/HelloGui/src/HelloGui.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="44" />
+          <folding>
+            <element signature="n#!!doc;n#HelloGui#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/senior/game/egret/HelloGui/egretProperties.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/senior/game/egret/HelloGui/resource/resource.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5">
+          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/senior/game/egret/HelloGui/src/Button.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="37" selection-start-line="27" selection-start-column="4" selection-end-line="31" selection-end-column="37" />
+          <folding>
+            <element signature="n#!!doc;n#Button#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/senior/game/egret/HelloGui/src/SelectBtn.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.88543373">
+          <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+          <folding>
+            <element signature="n#!!doc;n#SelectBtn#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

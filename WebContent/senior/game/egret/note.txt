@@ -11,6 +11,9 @@ egret build HelloWorld
 egret startserver HelloWorld
 
 
+创建egret gui的工程
+egret create HelloGui --type gui (1.5.0)
+
 
 
 
