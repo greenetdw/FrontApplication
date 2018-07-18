@@ -1,0 +1,26 @@
+
+安装ionic
+安装cordova
+
+创建app测试是否安装成功
+
+官方 ionicframework.com
+inonicons.com
+
+npm install -g cordova ionic
+ionic start myApp tabs
+npm install -g ionic@3.7 （3.20版创建异常）
+
+
+涉及到google浏览器跨域
+启动google浏览器  加上  --disable-web-security 参数
+
+
+
+
+
+
+
+
+
+

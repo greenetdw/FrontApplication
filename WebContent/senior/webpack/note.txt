@@ -1,0 +1,14 @@
+
+1.执行 git clone https://github.com/zce/music-player.git
+2.定位到music-player
+3.安装项目依赖： npm install
+	如果安装过程报错，可以通过淘宝镜像 加上 --registry=https://registry.npm.taobao.org
+4.启动音乐播放器的服务端 	npm run server
+5.启动音乐播放器的客户端	npm run client
+6.将准备好的uploads放到项目目录的www目录
+
+npm install webpack -g
+webpack demo.js --output output.js
+
+
+
