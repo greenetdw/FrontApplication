@@ -10,5 +10,8 @@
 npm install webpack -g
 webpack demo.js --output output.js
 
+webpack demo.js --output output.js --watch
+
+
 
 
